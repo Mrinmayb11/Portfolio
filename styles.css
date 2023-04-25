@@ -383,6 +383,7 @@ input{
     width: 450px;
     height: 40px;
     font-size: 1.2rem;
+    background-color: #fff;
 }
 textarea{
     font-size: 1.1rem;
