@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather+Sans:wght@300;400&family=Montserrat+Subrayada&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Copperplate Gothic';
+    src: url('CopperplateGothicBold.ttf') format('truetype');
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ------------------------- Root_Classes ------------------------ */
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+a,p{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    line-height: 1.6;
+}
+h1{
+    font-family: 'Copperplate Gothic', sans-serif;
+    font-size: 4.5rem;
+    letter-spacing: 0.2em;
+}
+li{
+    list-style-type: none;
+}
+button,a{
+    cursor: pointer;
+}
+#Top_Section_Wrapper{
+    background-color: black;
+    color: white;
+    height: auto;
+    height: 100vh;
+}
+/* ------------------------- Social_Link_Section ------------------------ */
+
+#Social_Link{
+    position: fixed;
+    bottom: 0;
+    right: 5vw;
+}
+#Links{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    align-items: center;
+}
+#Links::after{
+    content: "";
+    height: 33vh;
+    width: 1px;
+    background-color:#afafaf;
+    display: inline-block
+}
+li>a>i{
+    font-size: 1.7rem;
+    transition: all 0.3s ease;
+}
+li>a>i:hover{
+    transform: translateY(-5px);
+}
+.fa-youtube:hover{
+    color: hsl(0, 53%, 41%);
+}
+.fa-linkedin:hover{
+    color: hsl(224, 53%, 41%);
+}
+.fa-instagram:hover{
+    color: hsl(340, 53%, 41%);
+}
+.change_color{
+    color: black;
+}
+.change_color_2{
+    color: white;
+}
+#Other_Links{
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+}
+#Other_Links p{
+    color: white;
+    transform: rotate(90deg);
+    transform-origin: left;
+    font-size: 14px;
+    color: #afafaf;
+}
+#Other_Links::before{
+    content: "";
+    height: 28vh;
+    width: 1px;
+    background-color:#afafaf;
+    display: inline-block
+}
+/* ------------------------- Navbar_Section ------------------------ */
+
+#Ul_List_1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+    padding-top: 1.5em;
+    height: 50px;
+    padding-right: 9vw;
+    transition: width ease-in-out 0.3s;
+}
+#Ul_List_1 a{
+    width: 85px;
+    text-align: center;
+}
+#Ul_List_1 a:hover{
+    font-family: 'Copperplate Gothic', sans-serif;
+}
+#Toggle{
+    display: none;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+.change-cl{
+    color: black;
+}
+.add{
+    width: 100% !important;
+}
+/* ------------------------- Main_Section ------------------------ */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8vh;
+}
+.Main_Container{
+    padding-top: 17vh;
+    padding-left: 10vw;
+    width: 90%;
+    align-items: flex-start;
+}
+.Main_Container button,#remove{
+    background: transparent;
+    border: 2px solid hsl(224, 53%, 41%);
+    padding: 1em 3em;
+    position: relative;
+    overflow: hidden;
+}
+
+.Main_Container button::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(to right,hsl(0, 53%, 41%), hsl(310, 53%, 41%), hsl(271, 53%, 41%),hsl(224, 53%, 41%));
+    transition: height ease-in-out 0.3s;
+    border-top-right-radius: 50% ;
+    border-top-left-radius: 50% ;
+}
+.Main_Container button:hover:after{
+    height: 180%;
+}
+.Main_Container button>a{
+    color: white;
+}
+#Bold{
+    font-family: 'Copperplate Gothic', sans-serif;
+    /* color: hsl(0, 53%, 41%); */
+    background: linear-gradient(to right,hsl(0, 53%, 41%), hsl(310, 53%, 41%), hsl(271, 53%, 41%),hsl(224, 53%, 41%),hsl(0, 53%, 41%) );
+    background-size: 200%;
+    white-space: nowrap;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: background-pan 2s linear infinite;
+}
+  
+@keyframes background-pan {
+    from{
+        background-position: 0 center;
+    }
+    to{
+        background-position: -200% center;
+    }
+}
+.P1{
+    font-weight: 100;
+    /* width: 60ch; */
+    width: 80%;
+    color: #afafaf;
+    font-size: 1.3rem;
+    padding: 1.4em 0;
+    line-height: 1.5em;
+}
+
+/* ------------------------- Project_Section ------------------------ */
+
+#Project_Section{
+    height: 100vh;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+}
+#Project_Section p{
+    color: black;
+}
+.Project_Container{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 20vh;
+}
+.Project_Container>h1,#About_Me_Section h1,#Contact_Section h1{
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 4rem;
+}
+#Other_Website{
+    width: 500px;
+}
+.Top-Project_items{
+    padding-top: 7rem;
+}
+.Project_items{
+    align-items: flex-start;
+    gap: 1.5em;
+}
+.Project_Wrapper>h1{
+        padding-bottom: 2em;
+        font-size: 1.4rem;
+}
+.Project_Wrapper>p{
+    line-height: 1.7;
+    font-weight: 300;
+}
+.Project_Img>img{
+    width: 450px;
+    border: 2px solid rgb(90, 90, 90);
+    transition: all ease 0.3s;
+    cursor: pointer;
+    box-shadow: 5px 5px 25px solid rgba(0, 0, 0, 0.582);
+}
+.Project_Img>img:hover{
+    border: 2px solid black;
+    transform: scale(1.1);
+}
+.Project_Wrapper>div>button{
+    width: 8em;
+    height: 3em;
+    margin-top: 2.3em;
+    border-radius: 0;
+    border: none;
+    margin-right: 1.5em;
+    transition: all 0.5s ease;
+    border: 1px solid rgb(90, 90, 90);
+    background-color: #fff;
+}
+.Project_Wrapper>div>button>a{
+    color: black;
+}
+#btn_1:hover{
+    background-color: hsl(224, 53%, 41%);
+}
+#btn_2:hover{
+    background-color:  hsl(0, 53%, 41%);
+}
+#btn_2:hover a,#btn_1:hover a,#btn_1:hover>i,#btn_2:hover>i {
+    color: white;
+}
+
+
+
+#About_Me_Section{
+    background-color: rgb(187, 187, 187);
+    height: 100vh;
+    width: 100%;
+    align-items: flex-start;
+    padding-bottom: 5vh;
+}
+#About_Me_Section p{
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.7em;
+}
+.About_Me_Wrapper{
+    width: 70%;
+    gap: 6vh;
+}
+.Icons{
+    width: 55px;
+}
+#Skills{
+    gap: 3em;
+    padding-top: 5vh;
+}
+#Skills i{
+    font-size: 3rem;
+}
+
+
+
+
+
+
+.Contact_Wrapper h1{
+    padding-bottom: 1em;
+}
+#Contact_Section{
+    background-color: black;
+    height: 100vh;
+    align-items: flex-start;
+}
+#Contact_Section h1{
+    color: white;
+}
+.Contact_Wrapper{
+    width: 75%;
+    justify-content: flex-start;
+}
+.Contact_Content{
+    display: flex;
+    justify-items: center;
+    gap: 2em;
+}
+.Contact_Content form{
+    gap: 2em;
+}
+.Contact_Content>div>div>p:nth-child(3){
+    font-size: 14px;
+}
+.Contact_Content>div:nth-child(2)>div p{
+    padding-bottom: 1.5em;
+    font-weight: 200;
+}
+#remove{
+    background: linear-gradient(to right,hsl(0, 53%, 41%), hsl(310, 53%, 41%), hsl(271, 53%, 41%),hsl(224, 53%, 41%),hsl(0, 53%, 41%) );
+    background-size: 200%;
+    white-space: nowrap;
+    animation: background-pan 1.5s infinite linear;
+    border: none;
+    transition: all ease-in-out 0.3s;
+
+}
+#remove::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0%;
+    width: 100%;
+    z-index: -1;
+    background: black;
+    transition: height ease-in-out 0.3s;
+    border-bottom-right-radius: 50% ;
+    border-bottom-left-radius: 50% ;
+}
+#remove:hover{
+    border:1px solid hsl(224, 53%, 41%);
+}
+#remove:hover::before{
+    height: 180%;
+}
+.add2{
+    display: none;
+}
+input{
+    width: 450px;
+    height: 40px;
+    font-size: 1.2rem;
+}
+textarea{
+    font-size: 1.1rem;
+    resize: none;
+    width: 450px;
+}
+.Attributes{
+    font-size: 10px;
+    font-weight: 200;
+}
+.Attributes_Wrapper{
+    align-items: flex-start;
+    padding-bottom: 1em;
+}

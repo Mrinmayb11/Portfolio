@@ -1,0 +1,208 @@
+@media (max-width:868px) {
+
+    h1{
+        font-size: 3.7rem !important;
+    }
+    /* ------------ Main_Section ------------  */
+    .Top_Section_Wrapper{
+        width: 100%;
+    }
+    .Main_Container p{
+        width: 80%;
+    }
+    .P1{
+        font-size: 1.3rem;
+    }
+    .Project_Container > h1,.Project_Wrapper h1,.About_Me_Wrapper h1{
+        font-size: 2.1rem !important;
+    }
+    .Top-Project_items{
+        padding-top: 4.5em;
+    }
+    .Project_Wrapper h1{
+        padding-bottom: 1.4em;
+    }
+    textarea{
+        width: 450px !important;
+    }
+    input{
+        width: 450px !important
+    };
+    #Contact_Section{
+        justify-content: center;
+    }
+    #remove{
+        width: 450px !important;
+    }
+}
+
+
+
+@media (max-width:468px) {
+    h1{
+        font-size: 2.8rem !important;
+    }
+    .Project_Img>img{
+        width: 320px !important;
+    }
+    .Contact_Wrapper,.About_Me_Wrapper{
+        width: 85% !important;
+    }
+}
+
+
+
+
+
+
+@media (max-width:1050px) {
+    .Project_items{
+        flex-direction: column;
+    }
+    .Contact_Content{
+        flex-direction: column-reverse;
+    }
+    .Contact_Content>div:nth-child(2) button{
+        display: none !important;
+    }
+    .add2{
+        display: block;
+    }
+    form{
+        align-items: normal !important;
+    }
+    input{
+        width: 600px;
+    }
+    textarea{
+        width: 600px;
+    }
+    #Project_Section{
+        height: fit-content;
+    }
+    #About_Me_Section{
+        height: fit-content;
+    }
+    #Top_Section_Wrapper{
+        height: fit-content;
+        padding-bottom: 15vh;
+    }
+    #Contact_Section{
+        height: fit-content;
+    }
+    #remove{
+        width: 600px;
+    }
+}
+@media (max-width:668px) {
+    #Toggle{
+        display: block;
+        position: absolute;
+        top:4%;
+        right: 9%;
+        z-index: 11;
+        font-size: 2rem;
+
+    }
+    #Ul_List_1{
+        position: absolute !important;
+        display: flex;
+        flex-direction: column !important;
+        gap: 2em;
+        top: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.815);
+        height: 100vh;
+        align-items: center;
+        justify-content: flex-start;
+        padding:6em 0 0 0;
+        z-index: 10;
+        width: 0;
+        overflow: hidden;
+    } 
+    #Ul_List_1>a{
+        color: black;
+    }
+
+
+    #Social_Link{
+        position: absolute;
+        top: 35px;
+        left: 15%;
+    }
+    #Social_Link i{
+        font-size: 1.1rem;
+    }
+    #Links{
+        gap: 1em;
+        flex-direction: row;
+    }
+    #Links::after{
+        height: 0;
+    }
+    #Other_Links{
+        right: 2vw;
+    }
+    #Other_Links p{
+        font-size: 12px;
+    }
+    #Other_Links::before{
+        height: 0;
+    };
+}
+
+
+
+
+
+
+@media (max-width:568px) {
+    .Project_Img>img{
+        width: 400px;
+    }
+    .Btns{
+        display: flex;
+    }
+    .Project_Container > h1,.Project_Wrapper h1,.About_Me_Wrapper h1{
+        font-size: 1.9rem !important;
+        text-align: left !important;
+    }
+    .Project_Wrapper h1{
+        padding-bottom: 1em;
+    }
+    .Project_Container{
+        width: 85%;
+    }
+    .Top-Project_items{
+        padding-top: 4em;
+    }
+    .P1{
+        font-size: 1.1rem;
+    }
+    .About_Me_Wrapper{
+        width: 85%;
+        align-items: flex-start;
+    }
+    .About_Me_Wrapper p{
+        font-size: 15px !important;
+ 
+    }
+    #Skills{
+        gap: 1em !important;
+    }
+    #Skills i{
+        font-size: 2rem;
+    }
+    .Icons{
+        width: 33px;
+    }
+    textarea{
+        width: 320px !important;
+    }
+    input{
+        width: 320px !important;
+    }
+    #remove{
+        width: 320px !important;
+    }
+}

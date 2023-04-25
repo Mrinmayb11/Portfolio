@@ -1,0 +1,72 @@
+
+
+
+/* ------------------------- Main_Section ------------------------ */
+
+
+
+/* ------------- Nav_Section ------------- */
+
+@keyframes swip-form-up {
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#Ul_List_1>a:nth-child(1){
+    animation: swip-form-up 0.5s ease-in-out ;
+}
+#Ul_List_1>a:nth-child(2){
+    animation: swip-form-up 0.5s ease-in-out 200ms;
+}
+#Ul_List_1>a:nth-child(3){
+    animation: swip-form-up 0.5s ease-in-out 400ms;
+}
+#Ul_List_1>a:nth-child(4){
+    animation: swip-form-up 0.5s ease-in-out 600ms;
+}
+
+/* ------------- Main_Container ------------- */
+
+@keyframes swipt-from-down {
+    from{
+        opacity: 0;
+        transform: translateY(70px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Main_Container h1{
+    animation: swipt-from-down 0.5s ease-in-out;
+}
+.Main_Container p{
+    animation: swipt-from-down 0.5s ease-in-out 100ms;
+}
+.Main_Container button{
+    animation: swipt-from-down 0.5s ease-in-out 200ms;
+}
+
+/* ------------- Project_Section ------------- */
+
+
+@keyframes swipt-from-right {
+    from{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.Project_Img>img{
+    animation: swipt-from-right 0.75s ease-in-out;
+}
