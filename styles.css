@@ -255,8 +255,10 @@ main{
     transition: all ease 0.3s;
     cursor: pointer;
     box-shadow: 5px 5px 25px solid rgba(0, 0, 0, 0.582);
+    position: relative !important;
+    left: none
 }
-.Project_Img img:hover{
+.Project_Img>img:hover{
     border: 2px solid black;
     transform: scale(1.1);
 }
