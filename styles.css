@@ -249,14 +249,14 @@ main{
     line-height: 1.7;
     font-weight: 300;
 }
-.Project_Img>img{
+.Project_Img img{
     width: 450px;
     border: 2px solid rgb(90, 90, 90);
     transition: all ease 0.3s;
     cursor: pointer;
     box-shadow: 5px 5px 25px solid rgba(0, 0, 0, 0.582);
 }
-.Project_Img>img:hover{
+.Project_Img img:hover{
     border: 2px solid black;
     transform: scale(1.1);
 }
