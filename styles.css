@@ -325,6 +325,7 @@ main{
     background-color: black;
     padding: 5rem 0;
     align-items: flex-start;
+    height: 100vh;
 }
 #Contact_Section h1{
     color: white;
