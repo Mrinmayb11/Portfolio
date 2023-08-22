@@ -2165,6 +2165,7 @@ body {
 .div-block {
   flex: 0 auto;
   font-size: 5.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .div-block-2 {
@@ -2402,6 +2403,7 @@ body {
   align-items: center;
   display: flex;
   overflow: hidden;
+  margin-bottom: 0.5rem;
 }
 
 .heading-8 {
@@ -2857,5 +2859,22 @@ body {
 
   #w-node-f81af831-0bb4-8fa1-aaa8-4b1cbfe04e2a-7e6046c4, #w-node-_2c8becd4-2a5a-fee6-3790-cd2fc7848c68-7e6046c4 {
     grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .small-heading-2{
+    display: block !important;
+  }
+  .heading-2{
+    display: none;
+  }
+}
+@media screen and (min-width: 991px) {
+  .small-heading-2{
+    display: none !important;
+  }
+  .heading-2{
+    display: block;
   }
 }
